@@ -1,0 +1,11 @@
+Service '\App\mymodulewebapi\Api\Product' wasn't found in the dependency injection container
+#0 /app/remote/app/code/core/Components/ObjectManager.php(106): Phalcon\Di->get('\\App\\mymodulewe...')
+#1 /app/remote/app/code/apiconnect/Api/Base.php(22): App\Core\Components\ObjectManager->get('\\App\\mymodulewe...')
+#2 /app/remote/app/code/apiconnect/Api/Base.php(47): App\Apiconnect\Api\Base->getComponent()
+#3 /app/remote/app/code/webapi/controllers/RestController.php(73): App\Apiconnect\Api\Base->__call('get', Array)
+#4 [internal function]: App\Webapi\Controllers\RestController->v1Action('getProduct')
+#5 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->callActionMethod(Object(App\Webapi\Controllers\RestController), 'v1Action', Array)
+#6 [internal function]: Phalcon\Dispatcher\AbstractDispatcher->dispatch()
+#7 /app/remote/app/code/core/Application.php(127): Phalcon\Mvc\Application->handle('/webapi/rest/v1...')
+#8 /app/remote/public/index.php(6): App\Core\Application->run()
+#9 {main}
